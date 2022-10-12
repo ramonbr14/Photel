@@ -8,7 +8,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-//import view.Aposentos;
+import view.Aposentos;
 
 public class TelaPrincipal extends JFrame{
     private JButton btnAposentos;
@@ -16,13 +16,13 @@ public class TelaPrincipal extends JFrame{
     private JButton btnConta;
    
     public TelaPrincipal() {
-        super("Hotel ceKisabe");
+        super("Hotel Arendelle");
         Container cont = getContentPane();
         cont.setBackground(new Color(200,200,200));
        
         btnAposentos = new JButton("Aposentos");
         btnAposentos.addActionListener(
-            new ActionListener() {    //classe interna anônima            
+            new ActionListener() {    //classe interna anï¿½nima            
                 @Override
                 public void actionPerformed(ActionEvent e) {
                     Aposentos aposentos = new Aposentos();
@@ -30,7 +30,7 @@ public class TelaPrincipal extends JFrame{
                 }
             }
         );
-        btnFuncionario = new JButton("Funcionário");
+        btnFuncionario = new JButton("Funcionï¿½rio");
         btnConta = new JButton("Conta");
        
         setLayout(null);

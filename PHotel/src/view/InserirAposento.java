@@ -1,7 +1,5 @@
 package view;
 
-package view;
-
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -28,9 +26,9 @@ public class InserirAposento extends JFrame{
     public InserirAposento() {
         super("Inserir Aposento");
        
-        lblCodigo = new JLabel("Código");
-        lblNumero = new JLabel("Número");
-        lblDescricao = new JLabel("Descrição");
+        lblCodigo = new JLabel("Cï¿½digo");
+        lblNumero = new JLabel("Nï¿½mero");
+        lblDescricao = new JLabel("Descriï¿½ï¿½o");
         lblValor = new JLabel("Valor");
         txtCodigo = new JTextField();
         txtNumero = new JTextField();

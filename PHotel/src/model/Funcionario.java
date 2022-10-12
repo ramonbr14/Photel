@@ -4,7 +4,7 @@ public class Funcionario {
 	private int Codigo;
 	private String nome;
 	private String cargo;
-	private String salario;
+	private Double salario;
 	private String cpf;
 	private String telefone;
 	
@@ -13,7 +13,7 @@ public class Funcionario {
 		super();
 	}
 	
-	public Funcionario(int codigo, String nome, String cargo, String salario, String cpf, String telefone) {
+	public Funcionario(int codigo, String nome, String cargo, Double salario, String cpf, String telefone) {
 		super();
 		Codigo = codigo;
 		this.nome = nome;
@@ -42,10 +42,10 @@ public class Funcionario {
 	public void setCargo(String cargo) {
 		this.cargo = cargo;
 	}
-	public String getSalario() {
+	public Double getSalario() {
 		return salario;
 	}
-	public void setSalario(String salario) {
+	public void setSalario(Double salario) {
 		this.salario = salario;
 	}
 	public String getCpf() {

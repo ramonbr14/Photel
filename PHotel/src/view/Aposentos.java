@@ -20,7 +20,7 @@ public class Aposentos extends JFrame{
     private JButton btnAlterar;
     private JButton btnRemover;
     private static JTable tabela;
-    private static String [] colunas = {"Código", "Número", "Descrição", "Valor"};
+    private static String [] colunas = {"Cï¿½digo", "Nï¿½mero", "Descriï¿½ï¿½o", "Valor"};
    
     private static Object [][] dados = {};
 
@@ -39,7 +39,7 @@ public class Aposentos extends JFrame{
         btnRemover.setToolTipText("Remover");
        
         TableModel tableModel = new DefaultTableModel(dados,colunas);
-        //tabela = new JTable(dados,colunas);
+       //tabela = new JTable(dados,colunas);
         tabela = new JTable(tableModel);
         JScrollPane barraRolagem = new JScrollPane(tabela);        
        
@@ -71,10 +71,10 @@ public class Aposentos extends JFrame{
                         int linhaSelecionada = tabela.getSelectedRow();
                        
                         if(linhaSelecionada >= 0) {
-                            AlterarAposento janelaAlterar = new AlterarAposento(linhaSelecionada);
-                            janelaAlterar.setVisible(true);
+                           // AlterarAposento janelaAlterar = new AlterarAposento(linhaSelecionada);
+                           // janelaAlterar.setVisible(true);
                         }else {
-                            JOptionPane.showMessageDialog(null, "É necessário selecionar um aposento", "Aposento",JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "ï¿½ necessï¿½rio selecionar um aposento", "Aposento",JOptionPane.INFORMATION_MESSAGE);
                         }
                     }
                 });
@@ -95,7 +95,7 @@ public class Aposentos extends JFrame{
                                  atualizaTabela();
                             }
                         }else {
-                            JOptionPane.showMessageDialog(null, "É necessário selecionar um aposento", "Aposento",JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "ï¿½ necessï¿½rio selecionar um aposento", "Aposento",JOptionPane.INFORMATION_MESSAGE);
                         }
                     }
                 });
