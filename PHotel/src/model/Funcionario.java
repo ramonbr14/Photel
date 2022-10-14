@@ -59,8 +59,5 @@ public class Funcionario {
 	}
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
-	}
-	
-	
-	
+	}	
 }

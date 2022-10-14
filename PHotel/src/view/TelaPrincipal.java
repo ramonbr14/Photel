@@ -30,7 +30,17 @@ public class TelaPrincipal extends JFrame{
                 }
             }
         );
-        btnFuncionario = new JButton("Funcion�rio");
+        btnFuncionario = new JButton("Funcionário");
+       //Corrigir botão para a tela fucionario
+        btnFuncionario.addActionListener(
+                new ActionListener() {    //classe interna an�nima            
+                    @Override
+                    public void actionPerformed(ActionEvent e) {
+                        Aposentos aposentos = new Aposentos();
+                        aposentos.setVisible(true);
+                    }
+                }
+            );
         btnConta = new JButton("Conta");
        
         setLayout(null);
@@ -40,6 +50,6 @@ public class TelaPrincipal extends JFrame{
         btnAposentos.setBounds(15, 20, 200, 100);
         btnFuncionario.setBounds(215, 20, 200, 100);
         btnConta.setBounds(415, 20, 200, 100);
-        setSize(640,200);    
+        setSize(640,640);    
     }
 }
