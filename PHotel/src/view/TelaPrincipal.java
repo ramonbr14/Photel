@@ -9,6 +9,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 import view.Aposentos;
+import view.Funcionarios;
 
 public class TelaPrincipal extends JFrame{
     private JButton btnAposentos;
@@ -36,20 +37,21 @@ public class TelaPrincipal extends JFrame{
                 new ActionListener() {    //classe interna an�nima            
                     @Override
                     public void actionPerformed(ActionEvent e) {
-                        Aposentos aposentos = new Aposentos();
-                        aposentos.setVisible(true);
+                        Funcionarios funcionario = new Funcionarios();
+                        funcionario.setVisible(true);
                     }
                 }
             );
         btnConta = new JButton("Conta");
        
         setLayout(null);
+        setSize(640,640); 
         cont.add(btnAposentos);
         cont.add(btnFuncionario);
         cont.add(btnConta);
-        btnAposentos.setBounds(15, 20, 200, 100);
-        btnFuncionario.setBounds(215, 20, 200, 100);
-        btnConta.setBounds(415, 20, 200, 100);
-        setSize(640,640);    
+        btnAposentos.setBounds(15, 20, 150, 100);
+        btnFuncionario.setBounds(15, 120, 150, 100);
+        btnConta.setBounds(165, 20, 150, 100);
+           
     }
 }

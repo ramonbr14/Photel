@@ -61,7 +61,7 @@ public class Funcionarios extends JFrame {
         			@Override
         			public void actionPerformed(ActionEvent e) {
         				InserirFuncionario janelafun =  new InserirFuncionario();
-        				//janelafun.setVisible(true);
+        				janelafun.setVisible(true);
         			}
         		});
         
@@ -105,7 +105,7 @@ public class Funcionarios extends JFrame {
         
 	}
 	
-	private static void atualizaTabela() {
+	public static void atualizaTabela() {
 		TableModel tTabela = (DefaultTableModel) tabela.getModel();
         ((DefaultTableModel) tTabela).setNumRows(0);
 
