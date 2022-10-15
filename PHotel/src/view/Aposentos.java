@@ -95,13 +95,13 @@ public class Aposentos extends JFrame{
                                  atualizaTabela();
                             }
                         }else {
-                            JOptionPane.showMessageDialog(null, "� necess�rio selecionar um aposento", "Aposento",JOptionPane.INFORMATION_MESSAGE);
+                            JOptionPane.showMessageDialog(null, "É necessário selecionar um aposento", "Aposento",JOptionPane.INFORMATION_MESSAGE);
                         }
                     }
                 });
        
     }
-   
+    
     public static void atualizaTabela(){
         TableModel tTabela = (DefaultTableModel) tabela.getModel();
         ((DefaultTableModel) tTabela).setNumRows(0);

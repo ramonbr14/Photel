@@ -72,8 +72,8 @@ public class Funcionarios extends JFrame {
         				int linhaSelecionada = tabela.getSelectedRow();
         				
         				if(linhaSelecionada >= 0) {
-        				//AlterarFuncionario Janela Alterar =  new AlterarFuncionario(linhaSelecionada);
-        				//janelaAlterar.setVisible(true);	
+        				AlterarFuncionario janelaAlterar = new AlterarFuncionario(linhaSelecionada);
+        				janelaAlterar.setVisible(true);	
         				}else {
         					JOptionPane.showMessageDialog(null,"Necessario selecionar um usuario","Funcionario",JOptionPane.INFORMATION_MESSAGE);
         				}
