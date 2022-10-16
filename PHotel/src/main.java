@@ -1,3 +1,5 @@
+package PHotel.src;
+
 import javax.swing.JFrame;
 
 import view.TelaPrincipal;
